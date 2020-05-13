@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="Lib\sha1.js"></script>
+<script src="storeStops.js"></script>
+<script type="text/javascript" src="search.js" charset="UTF-8"></script>
+<title>搜尋</title>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="header">
+            <a href="index.html">
+                <img class="back" src="image/back.png" alt="back"></a>
+              
+            <p>站牌查詢</p>    
+        </div>
+        <div class="main">
+            <div class="pic">
+                <img src="image/bus.png" alt="bus">
+            </div>
+        <div class="search">
+            <input type="text" class="keyword" name="keyword" placeholder="請輸入站牌" >
+
+            <button type="submit" class="sub" onclick='search_stop()'>
+                搜尋
+            </button>
+        </div>
+        
+
+        
+        <table  class='route-arrived'>
+
+        </table>
+    </div>
+        
+
+
+</body>
+</html>

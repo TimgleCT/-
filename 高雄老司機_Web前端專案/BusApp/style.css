@@ -1,0 +1,912 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)route-list
+*/
+route-list
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+  /* background-color: black; */
+  
+}
+
+.wrap{
+ margin:0 auto;
+ width: 1013px;
+  height: 637px;
+  background-color:	#DCDCDC;
+   font-family:Microsoft JhengHei;
+}
+.in-header{
+  background-color: 	#5555FF;
+
+  height: 40px;
+}
+.in-header p{
+   font-size:19pt;
+  color:white;
+ 
+  padding:7px;
+  margin-left:10px;
+}
+.header{
+  background-color: 	#5555FF;
+  height: 40px;
+}
+
+.back{
+  width: 28px;
+  margin:6px;
+  float:left;
+}
+.header p{
+  font-size:15pt;
+  color:white;
+  text-align:center;
+  position: relative;
+  float:left;
+  padding:10px;
+
+}
+.header span{
+  font-size:15pt;
+  color:white;
+  text-align:center;
+  position: relative;
+  float: left;
+  
+  padding:10px;
+
+}
+.way{
+  background-color: 	#9999FF;
+  height: 20px;
+}
+.way p{
+  color: white;
+  text-align:center;
+  padding-top:2px;
+}
+.pic img{
+  width: 25%;
+  position: relative;
+  
+  top:20px;
+  left: 36%;
+}
+.overflow{
+  overflow:auto;
+  overflow-x:hidden;
+}
+.main{
+  height: 597px;
+ 
+  
+}
+.in-main{
+  padding-top:10px;
+  background-color:	#DCDCDC;
+}
+.rd-main{
+  height: 576px;
+ overflow:auto;
+  overflow-x:hidden;
+}
+.rf-main{
+  height: 597px;
+ overflow:auto;
+  overflow-x:hidden;
+  float:right;
+}
+.rd-backroad{
+  width: 34px;
+  
+  background-color:white;
+  padding:5px;
+  position: relative;
+  top:-35px;
+  left:85%;
+  color:#5555FF;
+  border-radius:10px;
+}
+.rd-reload {
+  background-color:#5555FF;
+ 
+   border:1px solid #5555FF;
+  width:34px;
+  height: 30px;
+  position: relative;
+  top: -62px;
+  left: 95%;
+ }
+.rd-reload img{
+  width: 24px;
+}
+input{
+  width: 99.5%;
+  height: 30px;
+  float:left;
+}
+.box{
+  border:2px #ccc solid;
+  border-radius:10px;
+  width:46%;
+  height:150px;
+  background-color:white;
+  margin:18px;
+  
+  float:left;
+}
+
+.route{
+  
+  margin-top:25px;
+  margin-left:25px;
+  margin-right:25px;
+  float:left;
+}
+.station{
+ float:left;
+  margin-top:25px;
+  margin-left:25px;
+  margin-right:25px;
+}
+.likeroute{
+  margin-top:25px;
+  margin-left:25px;
+  margin-right:25px;
+  float:left;
+
+}
+.likestation{
+  margin-top:25px;
+  margin-left:25px;
+  margin-right:25px;
+  float:left;
+
+}
+.routepic{
+  width:90px;
+ 
+  margin-bottom:10px;
+}
+.stationpic{
+  width:90px;
+  
+   margin-bottom:10px;
+ }
+ .searchre{
+  position: relative;
+  top: 30px;
+ height: 239px;
+ overflow:auto;
+  overflow-x:hidden;
+}
+.searchre-name{
+ padding:10px;
+ width: 925px;
+height: 40px;
+}
+.likeroutepic {
+  width:90px;
+  
+   margin-bottom:10px;
+  
+ }
+.likestationpic {
+  width:90px;
+  
+   margin-bottom:10px;
+ }
+ .route-list tr{
+  width: 658px;
+  height: 60px;
+  background-color: white;
+  border-top:1px solid grey;
+}
+.route-list img{
+  
+  width: 39px;
+  float:right;
+  margin-bottom:10px;
+  margin-right:5px;
+}
+
+#name{
+  float:left;
+ width: 593px;
+  margin-left:20px;
+  margin-top:10px;
+}
+#name p{
+  margin-bottom:5px;
+  color: #55f;
+}
+.footer{
+  border:1px solid grey;
+  height: 597px;
+  float:left;
+}
+
+#btnred{
+  color:red; 
+}
+#btnora{
+  color:orange; 
+}
+#btnye{
+ color:yellow; 
+}
+#btncl{
+  width: 195px;
+}
+#btn0{
+  width: 130px;
+}
+.btn{
+text-align:center;
+  font-size:18pt;
+  font-weight:bold;
+ background-color:#D1BBFF;
+  border:1px solid #E8CCFF;
+  width: 65px;
+  height: 149px;
+}
+.btnheart{
+  background-color: white;
+  border:none;
+  
+}
+.route-collectli tr{
+  width: 1000px;
+  height: 50px;
+  border-bottom:1px solid grey;
+  background-color: white;
+}
+
+
+.route-collect{
+  
+  padding:10px;
+   width:908px;
+  height: 30px;
+}
+.route-arrived li{
+  width: 1000px;
+  height: 60px;
+  background-color: white;
+  border-top:1px solid grey;
+}
+.route-arrived tr{
+  width: 1013px;
+  height: 40px;
+  background-color: white;
+  border-top:1px solid grey;
+}
+.go_list tr{
+  width: 1013px;
+  height: 60px;
+  background-color: white;
+  border-top:1px solid grey;
+}
+
+.back_list tr{
+  width: 1013px;
+  height: 60px;
+  background-color: white;
+  border-top:1px solid grey;
+}
+.route-arrived p{
+  background-color: 	#9999FF;
+  height: 20px;
+  color: white;
+  text-align:center;
+  padding-top:2px;
+}
+
+
+.arrived-name{
+  padding-top:10px;
+   width: 970px;
+  height: 50px;
+}
+.arrived-name p{
+  padding-top:4px;
+  color: #55f;
+ }
+.stop-collectli tr{
+  width:1000px;
+  height: 60px;
+  border-bottom:1px solid grey;
+  background-color: white;
+}
+
+
+.stop-collect{
+  padding:10px;
+   width: 907px;
+  height: 50px;
+}
+.stop-collectli p{
+  padding-top:6px;
+  color: #55f;
+ }
+ .route-stop tr{
+  width: 1000px;
+  height: 35px;
+  background-color: white;
+  border-top:1px solid grey;
+}
+.route-stop .time{
+  border-radius:10px;
+  background-color: grey;
+  font-size:13pt;
+  color: white;
+  padding:7px;
+  margin:7px;
+
+}
+
+.stopname{
+  padding-top:12px;
+   width: 926px;
+  height: 35px;
+}
+.route-stop img{
+  padding-right:12px;
+  width: 32px;
+}
+ h2{
+   margin-top:35px;
+  font-size:45pt;
+  margin-left:5px;
+  
+}
+h3{
+  font-size:17pt;
+ margin-bottom:5px;
+}
+h4{
+  font-size:13pt;
+  
+}
+a{
+  text-decoration:none;
+  color:	#666666;
+}
+.del{
+  margin-right:18px;
+  padding:5px;
+  font-size:16pt;
+  color: white;
+   background-color:	#F08080;
+  border:none;
+}
+.sub{
+  position: relative; 
+    top:25px;
+    left:46%;
+    padding:5px;
+    font-size:16pt;
+    color: white;
+     background-color:	#F08080;
+    border:none;
+  }
+  .rd-main .route-stop .btnheart{
+    
+    
+    position: relative;
+    top: 8px;
+    background-color: white;
+    border:none;
+
+
+  }
+
+
+
+
+@media(max-width:395px){
+
+  
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+.wrap{
+ margin:0 auto;
+  width: 320px;
+  height: 470px;
+  background-color:	#DCDCDC;
+   font-family:Microsoft JhengHei;
+}
+.in-header{
+  background-color: 	#5555FF;
+  width: 320px;
+  height: 40px;
+}
+.in-header p{
+   font-size:19pt;
+  color:white;
+ 
+  padding:7px;
+  margin-left:10px;
+}
+.header{
+  background-color: 	#5555FF;
+  width: 320px;
+  height: 40px;
+}
+.back{
+  width: 28px;
+  margin:6px;
+  float:left;
+}
+.header p{
+  font-size:15pt;
+  color:white;
+  text-align:center;
+  position: relative;
+  float:left;
+  padding:10px;
+}
+.header span{
+  font-size:15pt;
+  color:white;
+  text-align:center;
+ 
+  width:215px; 
+  position: absolute;
+  
+  left: 15%;
+  padding:10px;
+
+}
+.ellipsis {
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  }
+.backroad{
+  width: 34px;
+  
+  background-color:white;
+  padding:5px;
+  position: relative;
+  top:-35px;
+  right:-227px;
+  color:#5555FF;
+  border-radius:10px;
+}
+.reload {
+  background-color:#5555FF;
+ 
+   border:1px solid #5555FF;
+  width:34px;
+  height: 30px;
+  position: relative;
+  top: -62px;
+  left: 274px;
+ }
+.reload img{
+  width: 24px;
+}
+.bs-reload {
+  background-color:#5555FF;
+ 
+   border:1px solid #5555FF;
+  width:34px;
+  height: 30px;
+  position: relative;
+  top: 5px;
+  left: 160px;
+ }
+.bs-reload img{
+  width: 24px;
+}
+.rd-backroad{
+  width: 34px;
+  
+  background-color:white;
+  padding:5px;
+  position: relative;
+  top:-35px;
+  right:-227px;
+  color:#5555FF;
+  border-radius:10px;
+}
+.rd-reload {
+  background-color:#5555FF;
+ 
+   border:1px solid #5555FF;
+  width:34px;
+  height: 30px;
+  position: relative;
+  top: -62px;
+  left: 274px;
+ }
+.rd-reload img{
+  width: 24px;
+}
+.way{
+  background-color: 	#9999FF;
+  height: 20px;
+}
+.way p{
+  color: white;
+  text-align:center;
+  padding-top:2px;
+}
+.in-main{
+  padding-top:10px;
+}
+.rf-main{
+  height: 240px;
+ overflow:auto;
+  overflow-x:hidden;
+}
+.rd-main{
+  height: 410px;
+ overflow:auto;
+  overflow-x:hidden;
+}
+.overflow{
+  overflow:auto;
+  overflow-x:hidden;
+}
+.main{
+  height: 430px;
+ 
+}
+input{
+  width: 316px;
+  height: 30px;
+  float:left;
+}
+.pic img{
+  width: 140px;
+  position: relative;
+  
+  top:20px;
+  left: 90px;
+}
+.box{
+  border:2px #ccc solid;
+  border-radius:10px;
+  width:120px;
+  height:150px;
+  background-color:white;
+  margin:18px;
+  
+  float:left;
+}
+.route{
+  
+  margin-top:25px;
+  margin-left:25px;
+  margin-right:25px;
+}
+.station{
+ 
+  margin-top:25px;
+  margin-left:25px;
+  margin-right:25px;
+}
+.likeroute{
+  margin-top:25px;
+  margin-left:25px;
+  margin-right:25px;
+}
+.likestation{
+  margin-top:25px;
+  margin-left:25px;
+  margin-right:25px;
+}
+.routepic{
+  width: 100%;
+ 
+  margin-bottom:10px;
+}
+.stationpic{
+  width: 100%;
+  
+   margin-bottom:10px;
+ }
+ .searchre{
+  position: relative;
+  top: 10px;
+ height: 259px;
+ overflow:auto;
+  overflow-x:hidden;
+}
+.searchre-name{
+ padding:10px;
+ width: 236px;
+height: 40px;
+}
+.likeroutepic {
+  width: 100%;
+  
+   margin-bottom:10px;
+  
+ }
+.likestationpic {
+  width: 100%;
+  
+   margin-bottom:10px;
+ }
+
+.route-list tr{
+  width: 320px;
+  height: 60px;
+  background-color:white; 
+  border-top:1px solid grey;
+}
+.route-list img{
+  
+  width: 39px;
+  float:right;
+  margin-bottom:10px;
+  margin-right:5px;
+}
+#name{
+  float:left;
+ width: 235px;
+  margin-left:20px;
+  margin-top:10px;
+}
+.route-stop tr{
+  width: 320px;
+  height: 35px;
+  background-color: white;
+  border-top:1px solid grey;
+}
+.route-stop .time{
+  border-radius:10px;
+  background-color: grey;
+  font-size:13pt;
+  color: white;
+  padding:7px;
+  margin:7px;
+
+}
+
+.stopname{
+  padding-top:12px;
+   width: 260px;
+  height: 35px;
+}
+
+#name p{
+  margin-bottom:5px;
+  color: #55f;
+}
+.footer{
+  border:1px solid grey;
+  height: 190px;
+}
+
+.route-arrived tr{
+  width: 320px;
+  height: 60px;
+  background-color: white;
+  border-top:1px solid grey;
+}
+.route-arrived .time{
+  border-radius:10px;
+  background-color: grey;
+  font-size:13pt;
+  color: white;
+  padding:7px;
+  margin:7px;
+  position: relative;
+  top:8px;
+ }
+
+.arrived-name{
+  padding-top:10px;
+   width: 276px;
+  height: 50px;
+}
+.arrived-name p{
+ padding-top:4px;
+ color: #55f;
+}
+.stop-collectli tr{
+  width: 320px;
+  height: 60px;
+  border-bottom:1px solid grey;
+  background-color: white;
+}
+
+
+.stop-collect{
+  padding:10px;
+   width: 228px;
+  height: 50px;
+}
+.stop-collectli p{
+ padding-top:6px;
+ color: #55f;
+}
+.route-collectli tr{
+  width: 320px;
+  height: 50px;
+  border-bottom:1px solid grey;
+  background-color: white;
+}
+
+
+.route-collect{
+  
+  padding:10px;
+   width: 228px;
+  height: 30px;
+}
+#btnred{
+  color:red; 
+}
+#btnora{
+  color:orange; 
+}
+#btnye{
+ color:yellow; 
+}
+#btncl{
+  width: 191px;
+}
+#btn0{
+  width: 127px;
+}
+.btn{
+ text-align:center;
+  font-size:18pt;
+  font-weight:bold;
+ background-color: white;
+  border:1px solid grey;
+  width: 63.25px;
+  height: 46.48px;
+}
+.btnheart{
+  background-color: white;
+  border:none;
+  
+}
+.rd-main .route-stop .btnheart{
+  position: relative;
+  top: 8px;
+  background-color: white;
+  border:none;
+  
+}
+
+.route-stop img{
+  padding-right:12px;
+  width: 32px;
+}
+.del{
+  margin-right:18px;
+  padding:5px;
+  font-size:16pt;
+  color: white;
+   background-color:	#F08080;
+  border:none;
+}
+.sub{
+position: relative; 
+  top:5px;
+  left:135px;
+  padding:5px;
+  font-size:16pt;
+  color: white;
+   background-color:	#F08080;
+  border:none;
+}
+ h2{
+  font-size:13pt;
+  margin-left:25px;
+  
+}
+h3{
+  font-size:17pt;
+  margin-bottom:5px;
+}
+h4{
+  font-size:13pt;
+  
+}
+a{
+  text-decoration:none;
+  color:	#666666;
+}
+
+}
