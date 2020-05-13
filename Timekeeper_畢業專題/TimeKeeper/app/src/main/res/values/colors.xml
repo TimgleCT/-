@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#733F06</color>
+    <color name="colorPrimaryDark">#733F06</color>
+    <color name="colorAccent">#733F06</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#AAAAAA</color>
+    <color name="light_gray">#c8bbbbbb</color>
+    <color name="add_btn">#9662F7</color>
+    <color name="text">#733F06</color>
+    <color name="text2">#63553B</color>
+    <color name="pressed_btn">#88888888</color>
+    <color name="background_gray">#646464</color>
+    <color name="pink">#FFB9A5</color>
+    <color name="title">#63553B</color>
+    <color name="red">#FF3333</color>
+    <color name="light_text">#84704B</color>
+    <color name="about">#FF6A6A</color>
+    <color name="find_bug">#417505</color>
+    <color name="yellow">#FFF61A</color>
+    <color name="pressed">#DCDCDC</color>
+    <color name="blue">#31618C</color>
+    <color name="accent">#F5FA55</color>
+    <color name="circle_start">#d7bfe6</color>
+    <color name="circle_center">#dbc4db</color>
+    <color name="circle_end">#e0b6bc</color>
+    <color name="circle_background_start">#d3f3f6</color>
+    <color name="circle_background_end">#eee4f1</color>
+
+</resources>

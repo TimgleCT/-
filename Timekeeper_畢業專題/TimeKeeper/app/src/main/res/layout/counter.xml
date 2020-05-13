@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="300dp"
+        android:layout_height="90.6dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/hour"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/counter_title"/>
+
+    <com.example.user.myapplication.TextConfigNumberPicker
+        android:id="@+id/hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_centerVertical="true"></com.example.user.myapplication.TextConfigNumberPicker>
+
+    <com.example.user.myapplication.TextConfigNumberPicker
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/hour"
+        android:layout_centerHorizontal="true"></com.example.user.myapplication.TextConfigNumberPicker>
+
+    <com.example.user.myapplication.TextConfigNumberPicker
+        android:id="@+id/sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/hour"
+        android:layout_marginEnd="55dp"></com.example.user.myapplication.TextConfigNumberPicker>
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/min"
+        android:layout_marginTop="80dp"
+        android:text="start"
+        android:elevation="1dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/start_btn"/>
+
+</RelativeLayout>

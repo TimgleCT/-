@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tim's Web</title>
+
+    <link rel = "stylesheet" type = "text/css" href = "css/reset.css">
+    <link rel = "stylesheet" type="text/css" href="Semantic-UI-CSS-master/semantic.min.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/mobile.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161578161-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-161578161-1');
+    </script>
+
+    <script src = "js/jquery-2.1.4.min.js"></script>
+    <script src = "Semantic-UI-CSS-master/semantic.min.js"></script>
+    <script src = "js/style.js"></script>
+    <script src = "js/mail.js"></script>
+</head>
+<body>
+    <nav class = "nav">
+        <div class = "navContainer">
+            <img id = "myProfile" src = "img/profile.jpg" alt = "莊于霆">
+            <h3 class = "navHeader">莊于霆</h3>
+            <h4 class = "navHeader">Tim  Chuang</h3>
+        </div>
+        <div class = "barBlock">
+            <div class = "dropDown" id = "aboutMe">
+                <a href="#aboutMePage" class = "pageLink">關於我</a>
+                <div class = "dropDownContent" id = "aboutMeList">
+                    <a href="#educationPage" class = "pageLink">學歷</a>
+                    <a href="#skills" class = "pageLink ">能力自評</a>
+                </div>
+            </div>
+            <div class = "dropDown" id = "experience">
+                <a href="#experiencePage" class = "pageLink">相關經驗</a>
+                <div class = "dropDownContent" id = "expList">
+                    <a href="#clubExperience" class = "pageLink">社團與工作經驗</a>
+                    <a href="#competitionExperience" class = "pageLink ">競賽經驗</a>
+                    <a href="#volunteerExperience" class = "pageLink ">志工服務經驗</a>
+                </div>
+            </div>
+            <a href="#importantEvent" class = "pageLink">重要事件</a>
+            <a href="#portfolio" class = "pageLink">作品集</a>
+            <a href="#certificate" class = "pageLink">其他證明文件</a>
+            <a href="#contact" class = "pageLink">聯絡資訊</a>
+        </div>
+    </nav>
+
+    <div class = "coverPage" onclick="closeNav()"></div>
+
+    <header class = "mobileNav">
+        <a href="#" class = "ui button" id ="menuBtn">☰</a>
+        <span>Tim's Web</span>
+    </header>
+    
+    <div class = "mainContent">
+
+        <div class="header" id = "aboutMePage">
+            <h1 class = "title">關於我 － <span class = "noLetterSpace">Tim Chuang<span></h1>
+            <hr class = "line">
+            <p>&nbsp&nbsp&nbsp&nbsp大家好~我是莊于霆。目前就讀於中央資管碩一。在大學時期，我因為興趣與畢業專題的關係有接觸人工智慧的經驗，
+                我們利用keras工具與CNN完成智慧鬧鐘，可藉由使用者起床時使用手機的行為來判斷其是否已起床。也曾經利用Python的lxml來完成Dcard的文章爬蟲，
+            可了解某段時間內某個主題的討論熱度。</p>
+            <div id = "more">
+                <p>&nbsp&nbsp&nbsp&nbsp除了技術之外，我也與同學們組成小組參與了 2017 全國大專院校電子商務競賽，利用過去的經驗與技巧在 Facebook、Instagram 等社群媒體行銷與經營，
+                    並在 Dcard 上透過學生的文章成為美食版第一熱門文章，也成功地讓大家對此平台文章上的關注回流至粉絲專頁，
+                    使當日粉絲追蹤數提高將近一倍之多。 透過適當的行銷策略，最後奪得數位行銷獎優等的佳績。</p> 
+                <p>&nbsp&nbsp&nbsp&nbsp另外我也參加系學會擔任幹部、參加營隊籌備等等，積極參與學生活動。</p>
+            </div>
+            <div class = "readMore floatRight hide" id = "aboutMeText">Read More</div>
+        </div>
+
+        <div class = "unit group">
+            <div class = "imgBlock">
+                <img class = "middleImg" src = "img/A1.jpg">
+                <img class = "middleImg" src = "img/A2.jpg">
+                <img class = "middleImg" src = "img/A3.jpeg">
+            </div>
+            <div class = "imgBlock">
+                <img class = "middleImg" src = "img/A4.jpg">
+                <img class = "middleImg" src = "img/A5.jpg">
+                <img class = "middleImg" src = "img/A6.jpeg">
+            </div>
+        </div>
+        
+        <div class = "unit group" id = "educationPage">
+            <h1 class = "title">學歷 － <span class = "noLetterSpace">Education<span></span></h1>
+            <hr class = "line">
+            <div class = "cardBlock group">
+                <div class="ui yellow right ribbon label">校排第七</div>
+                <div class = "cardFront">
+                    <div id = "highSchool" class="opacityBackground"></div>
+                    <h3 class = "cardHead">高中</h3>
+                    <img class = "cardImg" src = "img/school-1.png">
+                    <h4 class="cardH4">私立普台高級中學</h4>
+                    <h4 class="cardH4">自然組</h4>
+                </div>
+                
+                <div class = "cardBack cardColorOrange-1">
+                    <img class = "cardImgBack" src = "img/school1-1.JPG">
+                    <h4 class = "cardBackHeader">人格特質的養成</h4>
+                    <div class="meta">
+                        盡守本份、處事理性、待人和善、樂於助人
+                    </div>
+                    <div class = "cardBackContent">
+                        <div class = "listItem listItemColor-1 group">
+                            <img class="floatLeftImg" src="img/schoolicon.png">
+                            <div class = "floatLeft">
+                                <div class = "listHeader">住宿生活</div>
+                                <div class = "listP">練習溝通與獨立生活</div>
+                            </div>
+                        </div>
+                        <div class = "listItem listItemColor-1 group">
+                            <img class="floatLeftImg" src="img/papericon.png">
+                            <div class = "floatLeft">
+                                <div class = "listHeader">自主管理</div>
+                                <div class = "listP">事先規劃今日作業目標</div>
+                            </div>
+                        </div>
+                        <div class = "listItem listItemColor-1 group">
+                            <img class="floatLeftImg" src="img/helpicon.png">
+                            <div class = "floatLeft">
+                                <div class = "listHeader">做事態度</div>
+                                <div class = "listP">參與志工與班級幹部</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class = "cardBlock">
+                <div class="ui orange right ribbon label">系排第二</div>
+                <div class = "cardFront">
+                    <div id = "college" class="opacityBackground"></div>
+                    <h3 class = "cardHead">大學</h3>
+                    <img class = "cardImg" src = "img/school2.png">
+                    <h4 class="cardH4">國立高雄大學</h4>
+                    <h4 class="cardH4">資訊管理學系</h4>
+                </div>
+                <div class = "cardBack cardColorOrange-2">
+                    <img class = "cardImgBack" src = "img/school2-1.jpg">
+                    <h4 class = "cardBackHeader">社會力的建立</h4>
+                    <div class="meta">
+                        團隊合作、專業基礎、領導能力、危機處理
+                    </div>
+                    <div class = "cardBackContent">
+                        <div class = "listItem listItemColor-2">
+                            <img class="floatLeftImg" src="img/code.png">
+                            <div class = "floatLeft">
+                                <div class = "listHeader">專業養成</div>
+                                <div class = "listP">資訊與管理均衡發展</div>
+                            </div>
+                        </div>
+                        <div class = "listItem listItemColor-2">
+                            <img class="floatLeftImg" src="img/team.png">
+                            <div class = "floatLeft">
+                                <div class = "listHeader">領導團隊</div>
+                                <div class = "listP">系學會與營隊的磨練</div>
+                            </div>
+                        </div>
+                        <div class = "listItem listItemColor-2">
+                            <img class="floatLeftImg" src="img/medal.png">
+                            <div class = "floatLeft">
+                                <div class = "listHeader">合作競賽</div>
+                                <div class = "listP">與團隊共獲殊榮</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class = "cardBlock">
+                <div class="ui red right ribbon label">努力中</div>
+                <div class = "cardFront">
+                    <div id = "college-2" class="opacityBackground"></div>
+                    <h3 class = "cardHead">研究所</h3>
+                    <img class = "cardImg" src = "img/school3.png">
+                    <h4 class="cardH4">國立中央大學</h4>
+                    <h4 class="cardH4">資訊管理學系碩士班</h4>
+                </div>
+                <div class = "cardBack cardColorOrange-3">
+                    <img class = "cardImgBack" src = "img/school3-1.jpg">
+                    <h4 class = "cardBackHeader">鑽研出專業專精</h4>
+                    <div class="meta">
+                        邏輯思考、問題解決、細心細膩、栽培自我
+                    </div>
+                    <div class = "cardBackContent">
+                        <div class = "listItem listItemColor-3">
+                            <img class="floatLeftImg" src="img/graduation-hat.png">
+                            <div class = "floatLeft">
+                                <div class = "listHeader">研讀資管領域</div>
+                                <div class = "listP">進入管理組並研究相關</div>
+                            </div>
+                        </div>
+                        <div class = "listItem listItemColor-3">
+                            <img class="floatLeftImg" src="img/think.png">
+                            <div class = "floatLeft">
+                                <div class = "listHeader">嚴謹思考以解決問題</div>
+                                <div class = "listP">撰寫論文的訓練過程</div>
+                            </div>
+                        </div>
+                        <div class = "listItem listItemColor-3">
+                            <img class="floatLeftImg" src="img/workteam.png">
+                            <div class = "floatLeft">
+                                <div class = "listHeader">為進入社會而準備</div>
+                                <div class = "listP">加學生團隊與企導計畫</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class = "unit group" id = "skills">
+            <h1 class = "title">能力自評 － <span class = "noLetterSpace">Skills<span></span></h1>
+            <hr class = "line">
+            <div class = "contentBar group">
+                <div class = "barIcon floatLeft barIconColor-1">
+                    <img src = "img/coding.png">
+                    <h4>技術能力</h3>
+                </div>
+                <div class = "barItemList barItemListColor-1">
+                    <div class = "barItem ">
+                        <div class="con">
+                            <div class="percent-circle percent-circle-left">
+                              <div id = "frontEndleft" class="left-content"></div>
+                            </div>
+                            <div class="percent-circle percent-circle-right">
+                              <div class="right-content"></div>
+                            </div>
+                            <div class="text-circle">85%</div>
+                        </div>
+                        <div class = "barItemContext">
+                            <h4 class="barItemHeader">網頁前端</h4>
+                            <hr>
+                            <div class = "meta">Html、CSS、Javascript、Django、Kendo、JQuery</div>
+                        </div>
+                    </div>
+                    <div class = "barItem">
+                        <div class="con">
+                            <div class="percent-circle percent-circle-left">
+                              <div id = "app" class="left-content"></div>
+                            </div>
+                            <div class="percent-circle percent-circle-right">
+                              <div class="right-content"></div>
+                            </div>
+                            <div class="text-circle">70%</div>
+                        </div>
+                        <div class = "barItemContext">
+                            <h4 class="barItemHeader">應用程式</h4>
+                            <hr>
+                            <div class = "meta">Android Studio</div>
+                        </div>
+                    </div>
+                    <div class = "barItem">
+                        <div class="con">
+                            <div class="percent-circle percent-circle-left">
+                              <div id = "dataScienceleft" class="left-content"></div>
+                            </div>
+                            <div class="percent-circle percent-circle-right">
+                              <div class="right-content"></div>
+                            </div>
+                            <div class="text-circle">80%</div>
+                        </div>
+                        <div class = "barItemContext">
+                            <h4 class="barItemHeader">資料科學</h4>
+                            <hr>
+                            <div class = "meta">Python、Keras(CNN)、Web Crawler</div>
+                        </div>
+                    </div>
+                    <div class = "barItem">
+                        <div class="con">
+                            <div class="percent-circle percent-circle-left">
+                              <div id = "versionControlleft" class="left-content"></div>
+                            </div>
+                            <div class="percent-circle percent-circle-right">
+                              <div class="right-content"></div>
+                            </div>
+                            <div class="text-circle">60%</div>
+                        </div>
+                        <div class = "barItemContext">
+                            <h4 class="barItemHeader">版本控制</h4>
+                            <hr>
+                            <div class = "meta">Github</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "contentBar group">
+                <div class = "barIcon floatRight barIconColor-2">
+                    <img src = "img/management.png">
+                    <h4>管理能力</h3>
+                </div>
+                <div class = "barItemList floatRight barItemListColor-2">
+                    <div class = "barItem">
+                        <div class="con">
+                            <div class="percent-circle percent-circle-left">
+                              <div id = "software" class="left-content"></div>
+                            </div>
+                            <div class="percent-circle percent-circle-right">
+                              <div class="right-content"></div>
+                            </div>
+                            <div class="text-circle">90%</div>
+                        </div>
+                        <div class = "barItemContext">
+                            <h4 class="barItemHeader">軟體應用</h4>
+                            <hr>
+                            <div class = "meta">Word、PowerPoint、Drow.io</div>
+                        </div>
+                    </div>
+                    <div class = "barItem">
+                        <div class="con">
+                            <div class="percent-circle percent-circle-left">
+                              <div id = "campaign" class="left-content"></div>
+                            </div>
+                            <div class="percent-circle percent-circle-right">
+                              <div class="right-content"></div>
+                            </div>
+                            <div class="text-circle">85%</div>
+                        </div>
+                        <div class = "barItemContext">
+                            <h4 class="barItemHeader">活動策畫</h4>
+                            <hr>
+                            <div class = "meta">活動規畫、撰寫企劃書、廠商簽約、活動執行、執行後檢討</div>
+                        </div>
+                    </div>
+                    <div class = "barItem">
+                        <div class="con">
+                            <div class="percent-circle percent-circle-left">
+                              <div id = "management" class="left-content"></div>
+                            </div>
+                            <div class="percent-circle percent-circle-right">
+                              <div class="right-content"></div>
+                            </div>
+                            <div class="text-circle">80%</div>
+                        </div>
+                        <div class = "barItemContext">
+                            <h4 class="barItemHeader">領導團隊</h4>
+                            <hr>
+                            <div class = "meta">團隊溝通、向心力培養、制度建立、會議主持</div>
+                        </div>
+                    </div>
+                    <div class = "barItem">
+                        <div class="con">
+                            <div class="percent-circle percent-circle-left">
+                              <div id = "socialmedia" class="left-content"></div>
+                            </div>
+                            <div class="percent-circle percent-circle-right">
+                              <div class="right-content"></div>
+                            </div>
+                            <div class="text-circle">75%</div>
+                        </div>
+                        <div class = "barItemContext">
+                            <h4 class="barItemHeader">社群公關</h4>
+                            <hr>
+                            <div class = "meta">社群小編、文案撰寫、Dcard 廣告文</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "unit group" id = "experiencePage">
+            <h1 class = "title" id = "clubExperience">社團與工作經驗 － <span class = "noLetterSpace">Club & Work<span></span></h1>
+            <hr class = "line">
+            <div class = "timeline">
+                <div class = "timelineBody">
+                    <ul class = "timelineLi group">
+
+                        <li>
+                            <div class = "circle"></div>
+                            <div class = "date">2015.10</div>
+                            <div class = "disc">
+                                <div class = "timelineHead timelineHeadColor-1">
+                                    <div class = numberBox>01</div>
+                                    <h4>高大資管營 企業參訪負責人 </h4>
+                                </div>
+                                <div class = "timelineContent timelineContentColor-1">
+                                    <ul>
+                                        <li>負責尋找與聯絡資訊相關企業，與企業端洽談企業參訪合作事宜。</li>
+                                        <li>與華智資訊合作完成該屆企業參訪。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class = "circle"></div>
+                            <div class = "date">2016.09</div>
+                            <div class = "disc">
+                                <div class = "timelineHead timelineHeadColor-1">
+                                    <div class = numberBox>02</div>
+                                    <h4>迎新宿營 機動長</h4>
+                                </div>
+                                <div class = "timelineContent timelineContentColor-1">
+                                    <ul>
+                                        <li>負責迎新宿營籌備與營期期間的場地、器材、 人力支援等規劃。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class = "circle"></div>
+                            <div class = "date">2016.09</div>
+                            <div class = "disc">
+                                <div class = "timelineHead timelineHeadColor-2">
+                                    <div class = numberBox>03</div>
+                                    <h4>全球普台制服日創辦人</h4>
+                                </div>
+                                <div class = "timelineContent timelineContentColor-2">
+                                    <ul>
+                                        <li><span class = "important">2016年首度舉辦母校高中制服日</span>，成功連結畢業校友懷念母校。</li>
+                                        <li><span class = "important">以粉絲專頁宣傳推動</span>，利用各校校友倒數貼文與留言分享的抽獎活動，增加校友共鳴與參與。</li>
+                                        <li>傳承至今已傳兩屆。</li>
+                                        <img class = "timelineImg" src = "img/uniformDay.jpg">
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class = "circle"></div>
+                            <div class = "date">2016.10</div>
+                            <div class = "disc">
+                                <div class = "timelineHead timelineHeadColor-2">
+                                    <div class = numberBox>04</div>
+                                    <h4>高大資管營 課務長</h4>
+                                </div>
+                                <div class = "timelineContent timelineContentColor-2">
+                                    <ul>
+                                        <li>各項課程活動組織管理，追蹤進度與內容規劃。</li>
+                                        <li><span class = "important">首創整合性課程</span>，以駭客松形式統整營期間課程收穫。 </li>
+                                        <li><span class = "important">成功凝聚了部員的向心力</span>，讓部員認同課務部並產生歸屬感。 </li>
+                                        <img class = "timelineImg" src = "img/6camp.jpg">
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class = "circle"></div>
+                            <div class = "date">2017.06</div>
+                            <div class = "disc">
+                                <div class = "timelineHead timelineHeadColor-3">
+                                    <div class = numberBox>05</div>
+                                    <h4>台灣互聯網高峰會 高大學生代表 </h4>
+                                </div>
+                                <div class = "timelineContent timelineContentColor-3">
+                                    <ul>
+                                        <li>帶領系學會成員代表高雄大學前往台北大學參與多校校際活動。</li>
+                                        <li>電商界企業主經驗分享，包含 Dcard、雲豹科技、瘋狂賣客、愛評網等企業</li>
+                                        <img class = "timelineImg" src = "img/internetMeeting.jpg">
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class = "circle"></div>
+                            <div class = "date">2017.07</div>
+                            <div class = "disc">
+                                <div class = "timelineHead timelineHeadColor-3">
+                                    <div class = numberBox>06</div>
+                                    <h4>系學會 會長</h4>
+                                </div>
+                                <div class = "timelineContent timelineContentColor-3">
+                                    <ul>
+                                        <li><span class = "important">首創系學會財務透明化</span>，公布雙月財報，與落實財務使用宣導，使系費繳交率超越上屆。 </li>
+                                        <li><span class = "important">重新整頓系上學生空間</span>，提供學生整齊、有規劃的環境。</li>
+                                        <li><span class = "important">活化系學會粉絲專頁</span>，使新生入學與活動時， 容易取得資訊與協助。</li>
+                                        <li><span class = "important">開設課輔部門</span>，定時舉辦讀書會交流課業內容。 </li>
+                                        <img class = "timelineImg" src = "img/departmentSociety.jpg">
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class = "circle"></div>
+                            <div class = "date">2017.10</div>
+                            <div class = "disc">
+                                <div class = "timelineHead timelineHeadColor-3">
+                                    <div class = numberBox>07</div>
+                                    <h4>高大資管營 副營長</h4>
+                                </div>
+                                <div class = "timelineContent timelineContentColor-3">
+                                    <ul>
+                                        <li>協助營長處理問題與加強各部門溝通。</li>
+                                        <li>幹部會議與檢討會時擔任紀錄。 </li>
+                                        <img class = "timelineImg" src = "img/7camp.jpg">
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class = "circle"></div>
+                            <div class = "date">2018.04</div>
+                            <div class = "disc">
+                                <div class = "timelineHead timelineHeadColor-3">
+                                    <div class = numberBox>08</div>
+                                    <h4>高大選委會 委員</h4>
+                                </div>
+                                <div class = "timelineContent timelineContentColor-3">
+                                    <ul>
+                                        <li>擔任文書組組員，進行海報文宣製作。 </li>
+                                        <li>負責系上同學參選三合一選舉相關事宜。 </li>
+                                        <img class = "timelineImg" src = "img/election.png">
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <h1 class = "title" id = "competitionExperience">競賽經驗 － <span class = "noLetterSpace">Competition<span></span></h1>
+            <hr class = "line">
+            <div class = "timeline">
+                <div class = "timelineBody">
+                    <ul class = "timelineLi group">
+                        <li>
+                            <div class = "circle"></div>
+                            <div class = "date">2017.06</div>
+                            <div class = "disc">
+                                <div class = "timelineHead timelineHeadColor-2">
+                                    <div class = numberBox>01</div>
+                                    <h4>2017 ECIC 全國大專院校電子商務競賽 數位行銷 優等獎</h4>
+                                </div>
+                                <div class = "timelineContent timelineContentColor-2">
+                                    <ul>
+                                        <li>擔任組員，負責<span class = "important">產品社群行銷</span>。</li>
+                                        <li>與NPO Channel合作，設立品牌<span class = "important">"限時凍態"</span>於Yahoo電商平台上販售鮮奶動捲。</li>
+                                        <li>利用 Dcard 美食版的寫文，成為當時美食版第一熱門文章並成功打開陌生市場與知名度。</li>
+                                        <li>Facebook 粉絲專頁網址：<a href="https://reurl.cc/M7q7WK">https://reurl.cc/M7q7WK</a>></li>
+                                        <img class = "timelineImg" src = "img/ecChampain.jpg">
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class = "circle"></div>
+                            <div class = "date">2017.09</div>
+                            <div class = "disc">
+                                <div class = "timelineHead timelineHeadColor-3">
+                                    <div class = numberBox>02</div>
+                                    <h4>106 年度招生影片創作暨主題式微電影競賽 宣傳片 參獎</h4>
+                                </div>
+                                <div class = "timelineContent timelineContentColor-3">
+                                    <ul>
+                                        <li>擔任組長，負責影片創意發想、追蹤拍攝與剪輯的進度、主持小組討論。</li>
+                                        <li>小組成員為管理學院四系的系學會會長，為首次整合四系系學會資源完成的作品，以管理學院招生宣傳片榮獲宣傳片參獎。</li>
+                                        <iframe src="https://drive.google.com/file/d/0B_MsCgiU3AtxbEdlcEFzbVZfNFk/preview" ></iframe>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class = "circle"></div>
+                            <div class = "date">2018.12</div>
+                            <div class = "disc">
+                                <div class = "timelineHead timelineHeadColor-4">
+                                    <div class = numberBox>03</div>
+                                    <h4>畢業專題競賽 第三名</h4>
+                                </div>
+                                <div class = "timelineContent timelineContentColor-4">
+                                    <ul>
+                                        <li>利⽤Keras來實現CNN類神經網路模型開發智慧型鬧鐘軟體，名為Timekeeper的Android應用程式。</li>
+                                        <li>藉由⼿機內建的加速度感測器、麥克風與螢幕使⽤狀態來了解使⽤者關閉鬧鐘後的⼿機使⽤⾏為，並以CNN類神經網路模型來判斷使⽤者是否起床，進而決定是否幫其⾃動增設貪睡鬧鐘，解決⼈們關閉鬧鐘後不⼩⼼睡著的問題。</li>
+                                        <li>本專題獲得<span class="important">科技部⼤專⽣研究計畫的補助</span>，也在第六屆激發學⽣創意競賽中獲得<span class="important">佳作</span>。</li>
+                                        <img class="timelineImg" src="img/graduateChampion.jpg"></img>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <h1 class = "title" id = "volunteerExperience">志工經驗 － <span class = "noLetterSpace">Volunteer<span></span></h1>
+            <hr class = "line">
+            <div class = "timeline">
+                <div class = "timelineBody">
+                    <ul class = "timelineLi group">
+                        <li>
+                            <div class = "circle"></div>
+                            <div class = "date">2017 ~ 2018</div>
+                            <div class = "disc">
+                                <div class = "timelineHead timelineHeadColor-2">
+                                    <div class = numberBox>01</div>
+                                    <h4>IM Pioneer 資訊服務隊</h4>
+                                </div>
+                                <div class = "timelineContent timelineContentColor-2">
+                                    <ul>
+                                        <li>前往學校周邊鄰里開設銀髮族手機使用課程。</li>
+                                        <li>教學範圍包跨手機基本操作、社群軟體(如Facebook、Line)與網路購物(蝦皮)的使用。</li>
+                                        <img class = "timelineImg" src = "img/IMP.jpg">
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class = "unit group" id = "importantEvent">
+            <h1 class = "title" >重要事件 － <span class = "noLetterSpace">Important Events<span></span></h1>
+            <hr class = "line">
+
+            <div class = "imgBox group">
+                <img class = "floatLeft imgBoxImg" src = "img/uniformDayProfile.jpg">
+                <div class = "imgBoxContent">
+                    <h4>2016 11/11 第一屆 全球普台制服日</h4>
+                    <p> 
+                        &nbsp&nbsp&nbsp&nbsp在大二期間，時不時看到大學身邊同學參與其母校高中的制服日活動，與母校產生連結外，也與畢業的同學們一同懷念過去高中的時光。
+                        當時的我，除了心生羨慕外，也認為這是一個很值得舉辦的活動，便向志同道合的朋友們提議，並主導籌辦這次的制服日。
+                    </p>
+                    <p id = "uniformHide" class = "hide">
+                        &nbsp&nbsp&nbsp&nbsp我們參考了其他學校的制服日活動後，先是訂定制服日日期、創建了粉專、設計Logo、與同學們討論如何吸引校友參加、粉專要有什麼內容與活動等等，
+                        之後與各校校友代表一同努力宣傳，成功使制服日當日的 Instagram 與 Facebook 充滿校友們穿起制服回憶高中的貼文，捲起一股懷念風潮，也驚動了母校高中長官們的注意，鼓勵此活動的永續發展。
+                    </p>
+
+                    <div class="slideshow-container" id = "uniformSlidesContainer">
+                        
+                        <div class="uniformSlides">
+                          <img src="img/uniform-1.png">
+                        </div>
+                      
+                        <div class="uniformSlides">
+                          <img src="img/uniform-2.jpg">
+                        </div>
+                      
+                        <div class="uniformSlides">
+                          <img src="img/uniform-3.jpg">
+                        </div>
+
+                        <div class="uniformSlides">
+                            <img src="img/uniform-4.jpg" style="max-width:20rem">
+                        </div>
+
+                        <div class="uniformSlides">
+                            <img src="img/uniform-5.jpg" style="max-width:20rem">
+                        </div>
+
+                        <div class="uniformSlides">
+                            <img src="img/uniform-6.png" style="max-width:20rem">
+                        </div>
+
+                        <div class="uniformSlides">
+                            <img src="img/uniform-7.jpg" style="max-width:20rem">
+                        </div>
+                      
+                        <a class="prev" onclick="plusEventSlides(-1, 0)">&#10094;</a>
+                        <a class="next" onclick="plusEventSlides(1, 0)">&#10095;</a>
+                      </div>
+
+
+                    <div class = "readMore floatRight" id = "uniformRead">
+                        Read More
+                    </div>
+                </div>
+            </div>
+
+            <div class = "imgBox group">
+                <img class = "floatRight imgBoxImg" src = "img/ec.jpg">
+                <div class = "imgBoxContent">
+                    <h4>2017 ECIC 全國大專院校電子商務競賽 </h4>
+                    <p> 
+                        &nbsp&nbsp&nbsp&nbsp本小組與 NPO Channel 合作，幫助其透過網路通路販售鮮奶凍捲。我們透過對該產品的特性、市場、優勢以及 NPO Channel 社會企業的了解，
+                        針對品牌進行設計，創立了"限時凍態"的品牌。
+                    </p>
+                    <p id = "ecHide" class = "hide">
+                        &nbsp&nbsp&nbsp&nbsp目標為希望打出了原料天然、健康無毒、公益活潑、限時配送的品牌形象。以 Facebook 粉絲團為行銷的主要平台，透過貼文、節慶、遊戲、吉祥物「牛牛」的打造與活動的操作，
+                        來推廣產品。此外也在其他平台如蝦皮、Yahoo、Instagram、Dcard 平台推廣，將各平台的使用者導回 Facebook 社群之中。最後在比賽中，榮獲數位行銷優等獎的成績，兩個月創造81條奶凍捲，45,000元的業績。
+                    </p>
+                    <div class="slideshow-container" id = "ecSlidesContainer">
+                        
+                        <div class="ecSlides">
+                          <img src="img/ec-11.jpg" style="max-width:22rem">
+                        </div>
+                      
+                        <div class="ecSlides">
+                          <img src="img/ec-7.jpg" style="max-width:22rem">
+                        </div>
+                      
+                        <div class="ecSlides">
+                          <img src="img/ec-3.jpg" style="max-width:22rem">
+                        </div>
+
+                        <div class="ecSlides">
+                            <img src="img/ec-6.jpg" style="max-width:22rem">
+                        </div>
+
+                        <div class="ecSlides">
+                            <img src="img/ec-1.jpg" style="max-width:22rem">
+                        </div>
+
+                        <div class="ecSlides">
+                          <img src="img/ec-2.png" style="max-width:22rem">
+                        </div>
+                        
+                        <div class="ecSlides">
+                            <img src="img/ec-8.jpg" style="max-width:22rem">
+                        </div>
+
+                        <div class="ecSlides">
+                            <img src="img/ec-4.jpg" style="max-width:22rem">
+                        </div>
+
+                        <div class="ecSlides">
+                            <img src="img/ec-5.jpg" style="max-width:22rem">
+                        </div>
+
+                        <div class="ecSlides">
+                            <img src="img/ec-10.jpg">
+                        </div>
+                      
+                        <a class="prev" onclick="plusEventSlides(-1, 1)">&#10094;</a>
+                        <a class="next" onclick="plusEventSlides(1, 1)">&#10095;</a>
+                      </div>
+
+                    <div class = "readMore floatLeft" id = "ecRead">
+                        Read More
+                    </div>
+                </div>
+            </div>
+
+            <div class = "imgBox group">
+                <img class = "floatLeft imgBoxImg" src = "img/IM_Logo.jpg">
+                <div class = "imgBoxContent">
+                    <h4>高大資管第十六屆系學會 會長</h4>
+                    <p> 
+                        &nbsp&nbsp&nbsp&nbsp為了實現過去對自己的期許與有個希望回饋系上的心，在大家的支持下當選了第十六屆系學會會長，更是考驗著政策執行力、部門溝通力與危機處理能力。
+                    </p>
+                    <p id = "DSHide" class = "hide">
+                        任內首度推動系學會財務透明化、落實系費使用宣導，增加學生對系學會財務使用的信心，成功使系費繳交率超越上屆達到九成。也首創設立課輔部門，定時舉辦讀書會交流課業內容，推動系上讀書會風氣。也推動與外校單位交流，帶領系學會成員參與台北大學舉辦之台灣互聯網高峰會，不但聽取電商界企業主的經驗分享，也與各校學生自治代表經驗交流。且最後交接給下一屆學弟妹時，完成完整的交接文件並交付，使過去經驗不中斷於離開的我們。
+                    </p>
+                    <p id = "DSHide" class = "hide">
+                        &nbsp&nbsp&nbsp&nbsp擔任會長同樣的也有諸多不順遂的地方，例如系服購買制度與活動虧損責任議題。遇到危機便與幹部、師長共同討論如何解決，開會並訂定完整的制度，補足原本的不足，並在第一時間處理， 將錯誤的損失降成最低。在其中學著危機處理與承擔責任。直到現在，仍非常感謝那年陪伴學生完成系學會任務的幹部與老師們。
+                    </p>
+                    
+                    <div class="slideshow-container" id = "DSSlidesContainer">
+                        
+                        <div class="DSSlides">
+                          <img src="img/DS-1.jpg" >
+                        </div>
+                      
+                        <div class="DSSlides">
+                          <img src="img/DS-2.jpg" >
+                        </div>
+                      
+                        <div class="DSSlides">
+                          <img src="img/DS-3.jpg" >
+                        </div>
+
+                        <div class="DSSlides">
+                            <img src="img/DS-4.jpg" >
+                        </div>
+
+                        <div class="DSSlides">
+                            <img src="img/DS-5.jpg" >
+                        </div>
+
+                        <div class="DSSlides">
+                          <img src="img/DS-6.jpg" style="max-width:22rem">
+                        </div>
+                        
+                        <div class="DSSlides">
+                            <img src="img/DS-7.jpg" style="max-width:22rem">
+                        </div>
+
+                        <div class="DSSlides">
+                            <img src="img/DS-8.jpg" style="max-width:22rem">
+                        </div>
+
+                        <div class="DSSlides">
+                            <img src="img/DS-9.jpg" style="max-width:30rem">
+                        </div>
+                      
+                        <a class="prev" onclick="plusEventSlides(-1, 2)">&#10094;</a>
+                        <a class="next" onclick="plusEventSlides(1, 2)">&#10095;</a>
+                      </div>
+
+                    
+                    <div class = "readMore floatRight" id = "DepartmentSocietyRead">
+                        Read More
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "unit group" id = "portfolio">
+            <h1 class = "title" >作品集 － <span class = "noLetterSpace">Portfolio<span></span></h1>
+            <hr class = "line">
+
+            <div class = "ui longer large modal" id = "portfolioModal">
+                <i class="close icon"></i>
+                <div class = "modalHead" id = "modalHead">TimeKeeper 智慧鬧鐘</div>
+                <div class = "scrolling image content">
+                    <div class="ui image group" id = "slideImgDiv">
+                        <div class = "container">
+
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 5</div>
+                                <img  id = "slideImg-1" src="img/timekeeper-8.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 5</div>
+                                <img id = "slideImg-2" src="img/timekeeper-1.png" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 5</div>
+                                <img id = "slideImg-3" src="img/timekeeper-2.png" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 5</div>
+                                <img id = "slideImg-4" src="img/timekeeper-3.png" style="width:100%">
+                            </div>
+                            
+                            <div class="mySlides">
+                                <div class="numbertext">5 / 5</div>
+                                <img id = "slideImg-5" src="img/timekeeper-4.png" style="width:100%">
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+                        
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+                        
+                            <div class="row">
+                                <div class="column">
+                                    <img class="demo cursor" id = "columImg-1" src="img/timekeeper-8.png" style="width:100%" onclick="currentSlide(1)" alt="三種模式可供選擇">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" id = "columImg-2" src="img/timekeeper-1.png" style="width:100%" onclick="currentSlide(2)" alt="系統首頁">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" id = "columImg-3" src="img/timekeeper-2.png" style="width:100%" onclick="currentSlide(3)" alt="好友頁面">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" id = "columImg-4" src="img/timekeeper-3.png" style="width:100%" onclick="currentSlide(4)" alt="加入好友頁面">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" id = "columImg-5" src="img/timekeeper-4.png" style="width:100%" onclick="currentSlide(5)" alt="個人資料頁面">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description" id = "modalDescription">
+                        <div class="ui header" id = "descriptionHead">結合AI、社群、Open Data的時間管家</div>
+                    </div>
+                </div>
+                <div class="actions">
+                    <div class="ui black deny button">
+                      關閉
+                    </div>
+                </div>
+            </div>
+
+            <div class = "colorBoxSet group">
+                
+                <div class = "colorBox colorBoxColor-1" id = "timekeeperColorBox">
+                    <div class = "ui violet right ribbon label">2018</div>
+                    <div class = "circleImg">
+                        <img src = "img/alarmclock.png">
+                    </div>
+                    <div class = "colorBoxContent">
+                        <h4>TimeKeeper 智慧鬧鐘</h4>
+                        <div>Android</div>
+                        <div>AI</div>
+                        <div>Keras</div>
+                        <div>MySQL</div>
+                        <div>PHP</div>
+                    </div>    
+                </div>
+                <div class = "colorBox colorBoxColor-2" id = "ncuGroceryShoppingManColorBox">
+                    <div class = "ui olive right ribbon label">2020</div>
+                    <div class = "circleImg">
+                        <img src = "img/vegetable.png">
+                    </div>
+                    <div class = "colorBoxContent">
+                        <h4>中央買菜郎</h4>
+                        <div>Django</div>
+                        <div>Html</div>
+                        <div>CSS</div>
+                        <div>Kendo UI</div>
+                        <div>Open Data</div>
+                        <div>Heroku</div>
+                    </div>    
+                </div>
+                <div class = "colorBox colorBoxColor-3" id = "lxmlDcardColorBox">
+                    <div class = "ui brown right ribbon label">2019</div>
+                    <div class = "circleImg">
+                        <img src = "img/dcardLogo.png">
+                    </div>
+                    <div class = "colorBoxContent">
+                        <h4>Dcard 文章關鍵字熱度爬蟲</h4>
+                        <div>Python</div>
+                        <div>lxml</div>
+                        <div>Web Crawler</div>
+                    </div>    
+                </div>
+
+                <div class = "colorBox colorBoxColor-4" id = "busColorBox">
+                    <div class = "ui pink right ribbon label">2018</div>
+                    <div class = "circleImg">
+                        <img src = "img/bus.png">
+                    </div>
+                    <div class = "colorBoxContent">
+                        <h4>高雄老司機</h4>
+                        <div>Html</div>
+                        <div>CSS</div>
+                        <div>Javascript</div>
+                        <div>Open data</div>
+                    </div>    
+                </div>
+
+                <div class = "colorBox colorBoxColor-5" id = "chineseNumColorBox">
+                    <div class = "ui orange right ribbon label">2018</div>
+                    <div class = "circleImg">
+                        <img src = "img/artificial-intelligence.png">
+                    </div>
+                    <div class = "colorBoxContent">
+                        <h4>中文數字手寫辨識</h4>
+                        <div>AI</div>
+                        <div>Keras</div>
+                        <div>CNN</div>
+                    </div>    
+                </div>
+
+                <div class = "colorBox colorBoxColor-6" id = "timerColorBox">
+                    <div class = "ui grey right ribbon label">2017</div>
+                    <div class = "circleImg">
+                        <img src = "img/pin.png">
+                    </div>
+                    <div class = "colorBoxContent">
+                        <h4>Timer</h4>
+                        <div>Node.js</div>
+                        <div>Open data</div>
+                        <div>Heroku</div>
+                    </div>    
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <div class = "unit group" id = "certificate">
+            <h1 class = "title" >其他證明文件 － <span class = "noLetterSpace">Certificate<span></span></h1>
+            <hr class = "line">
+            
+            <div class = "dropDownImg dropDownImgColor-1 group" id = "bookAward">
+                <div class = "head">
+                    書卷獎
+                    <i class = "chevron down icon"></i>
+                </div>
+                <div class = "bar group" id = "bookAwardBar">
+                    <div class = "highMinHeight">
+                        <img src = "img/bookAward-1.jpg">
+                        大一上 第二名 書卷獎
+                    </div>
+                    <div class = "highMinHeight">
+                        <img src = "img/bookAward-2.jpg">
+                        大一下 第一名 書卷獎
+                    </div>
+                    <div class = "highMinHeight">
+                        <img src = "img/bookAward-3.jpg">
+                        大二下 第二名 書卷獎
+                    </div>
+                </div>
+            </div>
+
+            <div class = "dropDownImg dropDownImgColor-2 group" id = "competitionAward">
+                <div class = "head">
+                    其他競賽獎狀
+                    <i class = "chevron down icon"></i>
+                </div>
+                <div class = "bar group" id = "competitionAwardBar">
+                    <div class = "highMinHeight">
+                        <img src = "img/competition-1.jpg">
+                        畢業專題 第三名
+                    </div>
+                    <div class = "highMinHeight">
+                        <img src = "img/competition-2.jpg">
+                        第六屆 激發學生創意競賽 佳作
+                    </div>
+                    <div class = "highMinHeight">
+                        <img src = "img/competition-3.jpg">
+                        2017 ECIC 全國大專院校電子商務競賽 數位行銷 優等獎
+                    </div>
+                    <div class = "highMinHeight">
+                        <img src = "img/competition-4.jpg">
+                        106年 招生影片創作暨主題式微電影競賽 入圍(管理學院)
+                    </div>
+                    <div class = "highMinHeight">
+                        <img src = "img/competition-7.jpg">
+                        106年 招生影片創作暨主題式微電影競賽 參獎(管理學院)
+                    </div>
+                    <div class = "highMinHeight">
+                        <img src = "img/competition-5.jpg">
+                        106年 招生影片創作暨主題式微電影競賽 入圍(資管系)
+                    </div>
+                    <div class = "highMinHeight">
+                        <img src = "img/competition-6.jpg">
+                        2018 倫理個案分析暨微電影競賽 個案組 佳作
+                    </div>
+                </div>
+            </div>
+
+            <div class = "dropDownImg dropDownImgColor-3 group" id = "leaderAward">
+                <div class = "head">
+                    幹部證明
+                    <i class = "chevron down icon"></i>
+                </div>
+                <div class = "bar group" id = "leaderAwardBar">
+                    <div class = "lowMinHeight">
+                        <img src = "img/leader-1.jpg">
+                        第十六屆 系學會 會長
+                    </div>
+                    <div class = "lowMinHeight">
+                        <img src = "img/leader-2.jpg">
+                        第七屆 高大資管營 副召
+                    </div>
+                    <div class = "lowMinHeight">
+                        <img src = "img/leader-3.jpg">
+                        第六屆 高大資管營 課務部 部長
+                    </div>
+                    <div class = "lowMinHeight">
+                        <img src = "img/leader-4.jpg">
+                        2016 資管週 財務長
+                    </div>
+                    <div class = "lowMinHeight">
+                        <img src = "img/leader-5.jpg">
+                        109級 迎新宿營 機動長
+                    </div>
+                </div>
+            </div>
+
+            <div class = "dropDownImg dropDownImgColor-4 group" id = "volunteerAward">
+                <div class = "head">
+                    志工感謝狀
+                    <i class = "chevron down icon"></i>
+                </div>
+                <div class = "bar group" id = "volunteerAwardBar">
+                    <div class = "highMinHeight">
+                        <img src = "img/volunteer-1.jpg">
+                        105年 IM Pioneer 翠屏里服務感謝狀
+                    </div>
+                    <div class = "lowMinHeight">
+                        <img src = "img/volunteer-2.jpg">
+                        106年 IM Pioneer 翠屏里服務感謝狀
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "unit group" id = "contact">
+            <h1 class = "title" >聯絡資訊 － <span class = "noLetterSpace">Contact Me<span></span></h1>
+            <hr class = "line">
+            <p>&nbsp&nbsp&nbsp&nbsp如果您想對我有更細一步的了解，或是您覺得這個個人網站還有哪邊可以改進的意見，
+                還是只是想認識認識交個朋友交流交流，都可以透過下方的連絡方式與我聯絡。我很高興可以認識大家，都很歡迎。
+            </p>
+
+            <div class = "sendMail">
+                <a id = "mailTo"></a>
+                    <form  id = "mailForm" class = "ui form" accept-charset="utf-8">
+                    <div class = field>
+                        <label>姓名：</label>
+                        <input type="text" name = "Name" placeholder="姓名">
+                    </div>
+                    <div class = field>
+                        <label>Email：</label>
+                        <input type="email" name = "Email" placeholder="Email">
+                    </div>
+                    <div class = field>
+                        <label>主旨：</label>
+                        <input type="text" name = "Subject" placeholder="主旨">
+                    </div>
+                    <div class = field>
+                        <label>你想說什麼(字數限制於210字以內)：</label>
+                        <textarea name = "content" cols="50" maxlength="210"></textarea>
+                    </div>
+                    <div class="ui success message" id = "seccessMessage">
+                        <div class="header">信件成功寄出囉!</div>
+                        <p>謝謝你的回覆，我看到後會盡快回復的XD</p>
+                    </div>
+                    <div class="ui error message" id = "errorMessage">
+                        <div class="header">可能有些忘記填或輸入錯誤喔!</div>
+                        <p></p>
+                    </div>
+                    <div class = field>
+                        <button class = "fluid ui button" type="button" onclick='validation()'>Send</button>
+                    </div>
+                </form>  
+            </div>
+
+            <div class = "contactBoxSet group">
+                <a href = "https://www.facebook.com/profile.php?id=100002342939054">
+                    <div class = "contactBox">
+                        <div class = "contactBoxImg">
+                            <img src = "img/facebook.png">
+                        </div>
+                        <div class = "colorBoxContent">
+                            <h4>Facebook</h4>
+                            <div class = "meta">莊于霆</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/%E8%8E%8A-%E4%BA%8E%E9%9C%86-7a7b39198/">
+                    <div class = "contactBox">
+                        <div class = "contactBoxImg">
+                            <img src = "img/linkedin.png">
+                        </div>
+                        <div class = "colorBoxContent">
+                            <h4>LinkedIn</h4>
+                            <div class = "meta">莊于霆</div>
+                        </div>
+                    </div>
+                </a>
+                <a href = "https://www.instagram.com/timgle_ct/?hl=zh-tw">
+                    <div class = "contactBox">
+                        <div class = "contactBoxImg">
+                            <img src = "img/instagram.png">
+                        </div>
+                        <div class = "colorBoxContent">
+                            <h4>Instagram</h4>
+                            <div class = "meta">timgle_ct</div>
+                        </div>
+                    </div>
+                </a>
+                <a href = "https://github.com/TimgleCT">
+                    <div class = "contactBox">
+                        <div class = "contactBoxImg">
+                            <img src = "img/github.png">
+                        </div>
+                        <div class = "colorBoxContent">
+                            <h4>Github</h4>
+                            <div class = "meta">TimgleCT</div>
+                        </div>
+                    </div>
+                </a>
+                <div class = "contactBox">
+                    <div class = "contactBoxImg">
+                        <img src = "img/gmail.png">
+                    </div>
+                    <div class = "colorBoxContent">
+                        <h4>Gmail</h4>
+                        <div class = "meta">ct25283115</div>
+                    </div>
+                </div>
+                <div class = "contactBox">
+                    <div class = "contactBoxImg">
+                        <img src = "img/telephone.png">
+                    </div>
+                    <div class = "colorBoxContent">
+                        <h4>Phone</h4>
+                        <div class = "meta">0973079448</div>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+        </div>
+    </div>
+
+</body>
+</html>

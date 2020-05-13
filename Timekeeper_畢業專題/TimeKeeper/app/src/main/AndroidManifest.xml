@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.user.myapplication">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".mainpage"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".normal_alarmalert"
+            android:excludeFromRecents="true"
+            android:label="ai_alarmalert" />
+        <activity
+            android:name=".ai_alarmalert"
+            android:excludeFromRecents="true"
+            android:label="ai_alarmalert" />
+        <activity android:name=".normal_alarm" />
+        <activity android:name=".normal_alarm_music" />
+        <activity android:name=".ai_alarm" />
+        <activity android:name=".ai_group.ai_alarm_group" />
+        <activity android:name=".ai_alarm_music" />
+        <activity android:name=".ai_manage.ai_manage" />
+        <activity android:name=".setting_setup" />
+        <activity android:name=".setting_friend" />
+        <activity android:name=".setting_friend_search" />
+        <activity android:name=".login" />
+        <activity android:name=".sign_up" />
+        <activity android:name=".forget_pwd" />
+        <activity android:name=".guide.guide_page" />
+        <activity android:name=".about" />
+
+        <receiver android:name=".Reciver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".Sleep_NotificationReceiver" />
+        <receiver android:name=".Awake_NotificationReceiver" />
+
+        <service
+            android:name=".Friend_Invite_Service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Group_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".AlertService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".BootService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".monster" />
+        <activity android:name=".counter" />
+        <activity android:name=".counter_countdown"></activity>
+    </application>
+
+</manifest>

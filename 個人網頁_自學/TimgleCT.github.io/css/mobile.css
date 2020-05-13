@@ -1,0 +1,378 @@
+@media only screen and (max-width: 1024px) {
+    .mainContent{
+        margin-left: 300px;
+        padding: 0;
+    }
+    .cardBackContent {
+        padding: 1em 0em 0px 0em;
+    }
+    .listItem{
+        margin: 0.8em 0px 0.8em 0px;
+    }
+    .cardBlock{
+        height: 43vw;;
+    }
+    .contentBar{
+        width: 95%;
+    }
+    .barItemList{
+        padding-top: 0;
+    }
+    .colorBoxSet{
+        max-width: 87.5vw;
+    }
+    .contactBox{
+        width: 25%;
+    }
+    .timelineHead::after{
+        display: none;
+    }
+    .date{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .mainContent{
+        width: 100%;
+        padding: 2% 4% 2% 4%;
+        margin-top: 70px;
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+    .mobileNav{
+        display: block;
+        position: fixed;
+        z-index: 2;
+    }
+    .nav{
+        display: none;
+    }
+
+    .cardBlock{
+        width: 220px;
+        height: 135vw;
+        max-height: 460px;
+        margin: 15px 0.5% 15px 0.5%;
+    }
+    h4{
+        font-size: 1.2rem;
+    }
+    .meta{
+        font-size: 1.5vw;
+    }
+    .cardBackContent {
+        padding: 1em 0em 0px 0em;
+    }
+    .listItem{
+        margin: 0.8em 4px 0.8em 4px;
+    }
+    .timelineHead h4 {
+        width: 70%;
+    }
+    .listHeader{
+        font-size: 1.0vw;
+    }
+    .listP{
+        font-size: 0.5vw;
+    }
+    .barItemContext {
+        padding: 0.5vh 15px 2vh 30px;
+    }
+    .con{
+        top: 15px;
+        height: 6vw;
+        width: 6vw;
+    }
+    .percent-circle-left {
+        width: 3vw;
+        border-radius: 3vw 0 0 3vw/3vw 0 0 3vw;
+    }
+    .percent-circle-right {
+        width:3vw;
+        border-radius: 0 3vw 3vw 0/0 3vw 3vw 0;
+    }
+      
+    .percent-circle-right .right-content{
+        border-radius: 0 3vw 3vw 0/0 3vw 3vw 0;
+    }
+      
+    .percent-circle-left {
+        width:3vw;
+        border-radius: 3vw 0 0 3vw/3vw 0 0 3vw;
+    }
+      
+    .percent-circle-left .left-content {
+        border-radius: 3vw 0 0 3vw/3vw 0 0 3vw;
+    }
+    .timelineHead::after {
+        display: none;
+    }
+    .colorBoxSet{
+        max-width: 87.5vw;
+    }
+    .contactBox{
+        width: 25%;
+    }
+    .dropDownImg .head{
+        font-size: 2.3vw;
+    }
+    /* #more{
+        display: none;
+        margin-bottom: 5px;
+    } */
+}
+
+
+@media only screen and (max-width: 425px) {
+    h1{
+        font-size: 2.0rem;
+    }
+    /* h4{
+        font-size: 1.2rem;
+    } */
+    p{
+        font-size: 1.1rem;
+    }
+    #aboutMeText{
+        display: block;
+    }
+    .mainContent{
+        width: 100%;
+        padding: 2% 7% 2% 4%;
+        margin-top: 70px;
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+    .unit{
+        margin-bottom: 10vw;
+    }
+    .header{
+        margin-top: 0px;
+    }
+    .imgBlock{
+        width: 98%;
+        margin-bottom: 20px;
+    }
+    .cardBlock{
+        width: 100%;
+        height: 135vw;
+        max-height: 460px;
+        min-height: 428px;
+        margin: 15px 1.5% 15px 1.5%;
+    }
+    .cardHead{
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    .cardImg{
+        margin-bottom: 3rem;
+    }
+    .cardH4{
+        font-size: 1.3rem;
+    }
+    .meta{
+        font-size: 2.8vw;
+    }
+    .cardBackHeader{
+        margin-top: 3vw;
+    }
+    .cardBackContent{
+        padding: 0.5vw 1vw 0px 1vw;
+    }
+    .listHeader{
+        font-size: 3.5vw;
+    }
+    .listP{
+        font-size: 3vw;
+    }
+    .contentBar{
+        width: 100%;
+        margin: 2rem 0rem 1rem 0rem;;
+    }
+    .barIcon{
+        width: 100%;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        padding: 7% 1.5em 1.5em 1.5em;
+    }
+    .barIcon h4{
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+    .barIcon img{
+        width: 16.33%;
+    }
+    .barItemList{
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+        padding: 1rem 0rem 1rem 0;
+    }
+    .barItem{
+        width: 100%;
+        height: auto;
+        margin: 0.4rem 0px;
+    }
+    .con {
+        top:0px;
+        height:4rem;
+        width:4rem;
+        margin: auto;
+        float: none;
+    }
+    .percent-circle-right {
+        width:2rem;
+        border-radius: 0 2rem 2rem 0/0 2rem 2rem 0;
+    }
+      
+    .percent-circle-right .right-content{
+        border-radius: 0 2rem 2rem 0/0 2rem 2rem 0;
+    }
+      
+    .percent-circle-left {
+        width:2rem;
+        border-radius: 2rem 0 0 2rem/2rem 0 0 2rem;
+    }
+      
+    .percent-circle-left .left-content {
+        border-radius: 2rem 0 0 2rem/2rem 0 0 2rem;
+    }
+      
+    .text-circle {
+        font-size: 0.9rem;
+    }
+    .barItemHeader{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .barItemContext{
+        width: 100%;
+        height: auto;
+        padding: 2vh 0px;
+        margin: auto;
+    }
+    .barItemContext hr{
+        width: 80%;
+    }
+    .barItemContext .meta {
+        font-size: 1.0rem;
+        text-align: center;
+        padding: 5px 50px;
+    }
+    .timeline{
+        margin-bottom: 15vw;
+        margin-top: 10vw;
+    }
+    .timelineBody .timelineLi{
+        padding: 1em 0 0 1em;
+    }
+    .timelineBody .timelineLi::before{
+        left: 1.8em;
+    }
+    .date{
+        font-size: 5vw;
+        margin-bottom: 3vw;
+        width: 60%;
+        text-align: left;
+        padding: 2.5% 0.8rem 0% 0.8rem;
+    }
+    .timelineHead::after {
+        display: none;
+    }
+    .disc{
+        width: 85%;
+        float: right;
+        margin: 0 1rem 3em 3rem;
+    }
+    .numberBox{
+        width: 40px;
+        height: 40px;
+        font-size: 1.8rem;
+        padding-top: 10px;
+    }
+    .timelineHead h4{
+        font-size: 5vw;
+        width: 65%;
+        margin-top: 15px;
+        margin-right: 5px;
+    }
+    .timelineContent{
+        padding: 0.5rem;
+    }
+    .timelineContent ul{
+        padding: 0 0.5rem 0 1.5rem;
+    }
+    .timelineContent ul li{
+        font-size: 0.9rem;
+    }
+    .dropDownImg{
+        width: 100%;
+    }
+    .bar div{
+        width: 38%;
+        margin: 5px 15px;
+    }
+    .dropDownImg .head{
+        font-size: 1.1rem;
+    }
+    .contactBox{
+        width: 29%;
+        margin: 2% 1.0% 2% 2.5%;
+    }
+    .contactBox .colorBoxContent h4{
+        font-size: 0.8rem;
+    }
+    .contactBox .meta {
+        font-size: 0.6rem;
+    }
+    .contactBoxSet {
+        margin: 6% auto;
+    }
+    .modalHead{
+        font-size: 5vw;
+        padding: 3vw 4.5vw
+    }
+    .ui.modal .content>.image{
+        text-align: inherit !important;
+    }
+    .colorBoxSet {
+        max-width: 73vw;
+    }
+    .timelineContent ul li{
+        line-height:1.1rem;
+        margin: 0.7rem 0 0.7rem 0;
+    }
+    iframe{
+        height: auto;
+    }
+    #more{
+        display: none;
+        margin-bottom: 5px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .colorBoxSet{
+        max-width: 80vw;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .mainContent{
+        padding: 2% 7% 2% 3%;
+    }
+    .colorBoxSet{
+        max-width: 80vw;
+    }
+    .colorBox{
+        min-width: 19.5rem;
+        min-height: 22rem;
+    }
+    .contactBox {
+        width: 45%;
+        min-height:7rem;
+    }
+    .contactBox .meta {
+        display: none;
+    }
+}

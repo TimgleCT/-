@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="13dp"
+    android:background="@drawable/textframe"
+    android:elevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+
+        <ImageView
+            android:id="@+id/friend_photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/ai_open" />
+
+        <TextView
+            android:id="@+id/friend_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="NAME" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/request_yes"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/friend_req_yes_btn"
+                android:elevation="1dp"
+                android:src="@drawable/ic_check" />
+
+            <ImageButton
+                android:id="@+id/request_no"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/friend_req_no_btn"
+                android:elevation="1dp"
+                android:src="@drawable/ic_cross" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

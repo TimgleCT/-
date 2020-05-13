@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="sha.js"></script>
+    <script src="choose_route.js"></script>
+    <script src="get_route_list.js"></script>
+    <script src="storeRoutes.js"></script>
+    <title>路線動態</title>
+</head>
+<body>
+    
+    
+<div class="wrap">
+  <div class="header">
+        <a href="index.html"> <img  class="back" src="image/back.png" alt="back"></a>
+        <p>路線動態搜尋：</p>
+        <p id="route"></p>        
+  </div>
+  <div class="rf-main">
+  </div>
+  
+  <div class="footer">
+    <table class="route-choose" >
+    <tbody>                                
+       <tr>
+         <td>
+          <button type="button" class="btn" id="btnred" value="紅" onclick="get_red()">紅</button>
+         </td>
+         <td>
+          <button type="button" class="btn" id="btnjoy" value="JOY" onclick="get_joy()">JOY</button>
+         </td>
+         <td>
+          <button type="button" class="btn" id="btn1" value="1" onclick="get_num1()">1</button>
+         </td>
+         <td>
+          <button type="button" class="btn" id="btn2" value="2" onclick="get_num2()">2</button>
+         </td>
+         <td>
+          <button type="button" class="btn" id="btn3" value="3" onclick="get_num3()">3</button>
+         </td>
+       </tr>
+      <tr>
+         <td>
+          <button type="button" class="btn" id="btnora" value="橘" onclick="get_org()">橘</button>
+         </td>
+         <td>
+          <button type="button" class="btn" id="btng" value="幹線" onclick="get_main()">幹線</button>
+         </td>
+         <td>
+          <button type="button" class="btn" id="btn4" value="4" onclick="get_num4()">4</button>
+         </td>
+         <td>
+          <button type="button" class="btn" id="btn5" value="5" onclick="get_num5()">5</button>
+         </td>
+         <td>
+          <button type="button" class="btn" id="btn6" value="6" onclick="get_num6()">6</button>
+         </td>
+       </tr>
+      <tr>
+         <td>
+          <button type="button" class="btn" id="btnye" value="黃" onclick="get_yellow()">黃</button>
+         </td>
+         <td>
+          <button type="button" class="btn" id="btnk" value="快線" onclick="get_fast()">快線</button>
+         </td>
+         <td>
+          <button type="button" class="btn" id="btn7" value="7" onclick="get_num7()">7</button>
+         </td>
+         <td>
+          <button type="button" class="btn" id="btn8" value="8" onclick="get_num8()">8</button>
+         </td>
+         <td>
+          <button type="button" class="btn" id="btn9" value="9" onclick="get_num9()">9</button>
+         </td>
+       </tr>
+       <tr>
+        <td  colspan="3";>
+          <button type="button" class="btn" id="btncl" value="清除" onclick="clean()">清除</button>
+         </td>
+         <td colspan="2">
+          <button type="button" class="btn" id="btn0" value="0" onclick="get_num0()">0</button>
+         </td>
+         
+       </tr>
+      
+      
+    </tbody>
+  </table>
+  </div>
+</div>
+</body>
+</html>

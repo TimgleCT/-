@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_setting_userIcon"
+        android:title="123"
+        android:icon="@drawable/ai_open"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_setup"
+        android:title="SET UP"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_friends"
+        android:title="FRIEND"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_check"
+        android:title="CHECK"
+        app:showAsAction="never"/>
+
+</menu>
